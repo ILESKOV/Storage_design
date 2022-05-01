@@ -101,6 +101,8 @@ Benefits of this type of pattern :
        - Now we have solution to delete data from an array
        
 Drawbacks of this type of pattern :
+       - There are always data in the mapping. Regardless of the key we use if we haven't set the mapping 
+       it will be set to the initial value, which is 0 for uint, empty string for string, false for bool and so on.
        - So we need to add extra data and it's just sort messy to work with
        - More complex code
 */
