@@ -2,7 +2,7 @@ pragma solidity 0.8.0;
 
 contract simpleList {
 
-// We have as truct that contain some data
+// We have a struct that contain some data
   struct EntityStruct {
     address entityAddress;
     uint entityData;
@@ -39,4 +39,5 @@ Drawbacks of this type of pattern :
        - We could input the id and get struct data, but we can't input address and get back the struct, 
        instead we must search throw with the loop looking for the entity that has my address. This is VERY costly
        - We have dublicates and we can add the same address with the same data hundreds times into the array
+       - There is no good easy solution to delete data from an array in this case
 */
