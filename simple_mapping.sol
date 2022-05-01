@@ -36,36 +36,9 @@ contract mappingWithStruct {
 }
 
 
-// We have as truct that contain some data
-  struct EntityStruct {
-    address entityAddress;
-    uint entityData;
-  }
-
-// We stored this structs in an array
-  EntityStruct[] public entityStructs;
-
-  function newEntity(address entityAddress, uint entityData) public returns(EntityStruct memory) {
-// Creating new entity
-    EntityStruct memory newEntity;
-    newEntity.entityAddress = entityAddress;
-    newEntity.entityData    = entityData;
-    
-// Pushing it to the array
-    entityStructs.push(newEntity);
-    
-// And return the id
-    return entityStructs[entityStructs.length - 1];
-  }
-
-  function getEntityCount() public view returns(uint entityCount) {
-    return entityStructs.length;
-  }
-}
-
 /* 
 Benefits of this type of pattern :
-       - We don't have dublicate, now we can directly get the entity of the address. No needs of looping to get data
+       - We don't have dublication, now we can directly get the entity of the address. No needs of looping to get data
        
 Drawbacks of this type of pattern :
        - We don't know how many of this entities is in the mapping, because we can't loop throw them all
