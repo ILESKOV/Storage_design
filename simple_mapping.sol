@@ -1,7 +1,7 @@
 pragma solidity 0.8.0;
 contract mappingWithStruct {
 
-// We have the struct that contain some data
+// We have a struct that contain some data
   struct EntityStruct {
     uint entityData;
     // This bool type is for distinguish between data that we actively set to 0 or mapping that doesn't exist
