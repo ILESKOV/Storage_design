@@ -1,4 +1,7 @@
-// - We can't get enumerates throw the KEY-VALUE to get all of entities
+// // This is improve of simple storage patern with using array of mapping KEYS
+// in order to solve problem with impossibility to loop and enumerates throw the 
+// KEY-VALUE storage to get all of entitities
+
 
 pragma solidity 0.8.0;
 
@@ -14,8 +17,7 @@ struct EntityStruct {
 // We have mapping
   mapping(address => EntityStruct) public entityStructs;
   
-// And we have array that save al of the KEYS of addresses to the mapping
-// 
+// And we have array that save all of the KEYS of addresses to the mapping
   address[] public entityList;
   
   function newEntity(address entityAddress, uint entityData) public returns(uint rowNumber) {
@@ -47,9 +49,6 @@ Benefits of this type of pattern :
        - Now we can enumarate this data(loop)
        
 Drawbacks of this type of pattern :
-       - We don't know how many of this entities is in the mapping, because we can't loop throw them all
-       and there are no such a thins like "length of the mapping", because it's just a KEY-VALUE type storage.
-       This is a big drawback depending of what we need of course
        - There are always data in the mapping. Regardless of the key we use if we haven't set the mapping 
        it will be set to the initial value, which is 0 for uint, empty string for string, false for bool and so on.
        - So we need to add extra data and it's just sort messy to work with
