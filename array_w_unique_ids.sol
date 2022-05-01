@@ -1,4 +1,4 @@
-// This is improve of simple storage patern with using mapping of address => bool
+// This is improve of simple_array storage patern with using mapping of address => bool
 // in order to solve problem with having duplicates data in array
 
 pragma solidity 0.8.0;
