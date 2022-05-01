@@ -43,6 +43,7 @@ contract mappedWithUnorderedIndexAndDelete {
     
     // and set the pointer
     entityStructs[entityAddress].listPointer = entityList.length - 1;
+    
     return true;
   }
 
