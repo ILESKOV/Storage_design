@@ -1,4 +1,4 @@
-// // This is improve of simple storage patern with using array of mapping KEYS
+// This is improve simple_mapping storage patern with using array of mapping KEYS
 // in order to solve problem with impossibility to loop and enumerates throw the 
 // KEY-VALUE storage to get all of entitities
 
@@ -47,9 +47,9 @@ Benefits of this type of pattern :
        - We don't have dublication, now we can directly get the entity of the address. No needs of looping to get data
        - Now we can count the number of inserted values into the mapping(number of users or entities etc.)
        - Now we can enumarate this data(loop)
+       - This array is solving problem with "0 value struct", because we have the list of addresses in array
        
 Drawbacks of this type of pattern :
-       - There are always data in the mapping. Regardless of the key we use if we haven't set the mapping 
-       it will be set to the initial value, which is 0 for uint, empty string for string, false for bool and so on.
        - So we need to add extra data and it's just sort messy to work with
+       - New BIG problem is that there is no good easy solution to delete data from an array
 */
