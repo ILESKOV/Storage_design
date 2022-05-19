@@ -12,7 +12,7 @@ For example:
         Where they don't depend on some size of array. They just instant
         
         
-        - If we need enuberable objects in our contract to be able iterate throw an array, to get all of the specific                 entities,
+        - If we need enuberable objects in our contract to be able iterate throw an array, to get all of the specific entities,
         and do some operations with this data, we probalbly need an Array and it migth be a good idea to create more complex 
         storage to have both mapping and array. Usually this combination is the best.
         If we need to have enuberable storage with instant writing and reading and update, which we do when we have MAPPING
