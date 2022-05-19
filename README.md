@@ -29,7 +29,7 @@ For example:
         - Think what sort of operations do I need in my storage and depending on that choose your solution
         
         - Another thing is very important to think about is what sort of operations will you do a lot of.
-        Let's say you will be doing a lot of create functions calls, you'll be do a lot of create operations, but you will           not
+        Let's say you will be doing a lot of create functions calls, you'll be do a lot of create operations, but you will not
         do delete operations.
         Than you can think I want to create operations to be very fast . I don't want that be depend on the size of the
         storage. You know that you want to do a lot of update calls, then an pure ARRAY is probably not good idea,
@@ -38,6 +38,6 @@ For example:
         probably a bad idea
         
         - But maybe you want storage with enumerable data, and you will only input data. You will not read or update 
-        specific address or KEYS. You will only add data and calculations of data set, then there are no use cases for               mapping
+        specific address or KEYS. You will only add data and calculations of data set, then there are no use cases for mapping
         If you need to iterate some data, then using only ARRAY is good idea
         
