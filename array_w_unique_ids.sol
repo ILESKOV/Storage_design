@@ -20,7 +20,7 @@ contract arrayWithUniqueIds {
   function newEntity(address entityAddress, uint entityData) public returns(uint rowNumber) {
  
  // and if it have once we create an entity we check this and revert if it's not the case
-    if(isEntity(entityAddress)) revert();
+    if(knownEntity(entityAddress)) revert();
     
     // Creating new entity
     EntityStruct memory newEntity;
