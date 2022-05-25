@@ -39,5 +39,5 @@ For example:
         
         - But maybe you want storage with enumerable data, and you will only input data. You will not read or update 
         specific address or KEYS. You will only add data and calculations of data set, then there are no use cases for mapping
-        If you need to iterate some data, then using only ARRAY is good idea
+        If you need to iterate some data, then using only ARRAY is good idea..
         
