@@ -41,3 +41,4 @@ For example:
         specific address or KEYS. You will only add data and calculations of data set, then there are no use cases for mapping
         If you need to iterate some data, then using only ARRAY is good idea..
         
+
